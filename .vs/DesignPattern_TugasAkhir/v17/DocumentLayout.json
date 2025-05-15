@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\DesignPattern_TugasAkhir\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DesignPattern_TugasAkhir.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
+              "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
+              "RelativeToolTip": "DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-15T08:55:01.215Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿  DesignPattern_TugasAkhir.cpp
+C:\Users\User\source\repos\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir.cpp(101,9): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\User\source\repos\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir.cpp(136,17): error C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+C:\Users\User\source\repos\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir\DesignPattern_TugasAkhir.cpp(141,14): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
