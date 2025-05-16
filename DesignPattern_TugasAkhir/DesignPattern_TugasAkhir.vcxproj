@@ -127,11 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Class\Laser\Laser.cpp" />
     <ClCompile Include="Class\Spaceship\SpaceShip.cpp" />
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
+    <ClCompile Include="Game.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Class\Laser\Laser.h" />
     <ClInclude Include="Class\Spaceship\SpaceShip.h" />
+    <ClInclude Include="Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Graphics\alien_1.png" />
+    <Image Include="Graphics\alien_2.png" />
+    <Image Include="Graphics\alien_3.png" />
+    <Image Include="Graphics\mystery.png" />
+    <Image Include="Graphics\spaceship.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

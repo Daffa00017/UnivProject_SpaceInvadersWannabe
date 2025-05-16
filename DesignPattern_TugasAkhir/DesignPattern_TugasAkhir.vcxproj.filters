@@ -21,10 +21,39 @@
     <ClCompile Include="Class\Spaceship\SpaceShip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Laser\Laser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Spaceship\SpaceShip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Laser\Laser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Graphics\alien_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\alien_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\alien_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\mystery.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\spaceship.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
