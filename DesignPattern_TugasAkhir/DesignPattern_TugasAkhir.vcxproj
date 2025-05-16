@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Class\Spaceship\SpaceShip.cpp" />
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class\Spaceship\SpaceShip.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
