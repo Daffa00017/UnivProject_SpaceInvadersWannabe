@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Class\Laser\Laser.cpp" />
+    <ClCompile Include="Class\Obstacle\Block.cpp" />
+    <ClCompile Include="Class\Obstacle\Obstacle.cpp" />
     <ClCompile Include="Class\Spaceship\SpaceShip.cpp" />
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
     <ClCompile Include="Game.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Laser\Laser.h" />
+    <ClInclude Include="Class\Obstacle\Block.h" />
+    <ClInclude Include="Class\Obstacle\Obstacle.h" />
     <ClInclude Include="Class\Spaceship\SpaceShip.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>

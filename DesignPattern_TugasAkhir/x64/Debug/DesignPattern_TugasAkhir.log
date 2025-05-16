@@ -1,4 +1,6 @@
 ﻿  Game.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(74,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(75,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   DesignPattern_TugasAkhir.vcxproj -> C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\x64\Debug\DesignPattern_TugasAkhir.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
