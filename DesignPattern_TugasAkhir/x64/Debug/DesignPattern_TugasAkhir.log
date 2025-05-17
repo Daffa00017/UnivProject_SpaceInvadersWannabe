@@ -1,6 +1,31 @@
-﻿  Game.cpp
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(74,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(75,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+﻿  Alien.cpp
+  InputManager.cpp
+  Laser.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Laser\Laser.cpp(14,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Laser\Laser.cpp(14,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Block.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Obstacle\Block.cpp(9,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Obstacle\Block.cpp(9,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Obstacle.cpp
+  SpaceShip.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Spaceship\SpaceShip.cpp(6,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Spaceship\SpaceShip.cpp(7,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Class\Spaceship\SpaceShip.cpp(36,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  DesignPattern_TugasAkhir.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.h(28,47): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'DesignPattern_TugasAkhir.cpp')
+  
+  Game.cpp
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.h(28,47): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(101,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(102,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(129,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(130,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(165,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(168,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
   DesignPattern_TugasAkhir.vcxproj -> C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\x64\Debug\DesignPattern_TugasAkhir.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

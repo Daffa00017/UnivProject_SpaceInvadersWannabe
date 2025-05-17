@@ -1,14 +1,19 @@
 #include "Game.h"
+#include "Class/InputManager/InputManager.h"
 #include <iostream>
 
 Game::Game()
 {
 	obstacles = CreateObstacles();
+	//int cellsize = 55;
+	aliens = CreateAliens();
+	aliensdirection = 1;
+	timeLastAlienLaser = 0.0;
 }
 
 Game::~Game()
 {
-	
+	Alien::UnloadImages();
 }
 
 void Game::update()
@@ -18,6 +23,13 @@ void Game::update()
 		laser.update();
 	}
 	
+	MoveAliens();
+	alienShootLaser();
+
+	for (auto& laser : alienLaser) {
+		laser.update();
+	}
+
 	DeleteInactiveLaser();
 	//std::cout << "Vector size : " << SpaceShip.lasers.size() << std::endl;
 }
@@ -36,13 +48,21 @@ void Game::Draw()
 		obstacle.Draw();
 	}
 
+	for (auto& alien : aliens) {
+		alien.Draw();
+	}
+
+	for (auto& laser : alienLaser) {
+		laser.Draw();
+	}
 }
 
 
 
 void Game::HandleInput()
 {
-	if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_A))
+	InputManager::GetInstance()->HandleInput(SpaceShip);
+	/*if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_A))
 	{
 		SpaceShip.MoveLeft();
 	}
@@ -51,9 +71,8 @@ void Game::HandleInput()
 	}
 	else if (IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
 		SpaceShip.ShootLaser();
-	}
+	}*/
 
-	
 }
 
 void Game::DeleteInactiveLaser()
@@ -62,6 +81,14 @@ void Game::DeleteInactiveLaser()
 	for (auto it = SpaceShip.lasers.begin(); it != SpaceShip.lasers.end();) {
 		if (!it->active) {
 			it = SpaceShip.lasers.erase(it);
+		}
+		else {
+			++it;
+		}
+	}
+	for (auto it = alienLaser.begin(); it != alienLaser.end();) {
+		if (!it->active) {
+			it = alienLaser.erase(it);
 		}
 		else {
 			++it;
@@ -79,5 +106,66 @@ std::vector<Obstacle> Game::CreateObstacles()
 		obstacles.push_back(Obstacle({offsetX, float(GetScreenHeight()-100)} ) );
 	}
 	return obstacles;
+}
+
+std::vector<Alien> Game::CreateAliens()
+{
+	std::vector<Alien> aliens;
+	for (int row = 0; row < 5; row++) {
+		for (int column = 0; column < 11; column++) {
+			//Check the row of the alien from up to apply alien type
+			int alientype;
+				if (row == 0) {
+					alientype = 3;
+				}
+				else if (row == 1 || row == 2) {
+					alientype = 2;
+				}
+				else {
+					alientype = 1;
+				}	
+
+
+			float x = 75 + column * cellsize;
+			float y = 110 + row * cellsize;
+			aliens.push_back(Alien(alientype, { x,y }));
+		}
+	}
+	return aliens;
+}
+ 
+void Game::MoveAliens()
+{
+	for (auto& alien : aliens) {
+		if (alien.position.x + alien.alienImages[alien.type - 1].width > GetScreenWidth()){
+			aliensdirection = -1;
+			MoveDownAliens(aliensDownPixel);
+		}
+		if (alien.position.x < 0) {
+			aliensdirection = 1;
+			MoveDownAliens(aliensDownPixel);
+		}
+
+		alien.Update(aliensdirection);
+
+	}
+}
+
+void Game::MoveDownAliens(int distance)
+{
+	for (auto& alien:aliens) {
+		alien.position.y += distance; 
+	}
+}
+
+void Game::alienShootLaser()
+{
+	double currenttime = GetTime();
+	if(currenttime - timeLastAlienLaser >= alienLaserInterval && !aliens.empty()){
+		int randomIndex = GetRandomValue(0, aliens.size() - 1);
+		Alien& alien = aliens[randomIndex];
+		alienLaser.push_back(Laser({ alien.position.x + alien.alienImages[alien.type - 1].width / 2, alien.position.y + alien.alienImages[alien.type - 1].height }, 6));
+		timeLastAlienLaser = GetTime();
+	}
 }
 

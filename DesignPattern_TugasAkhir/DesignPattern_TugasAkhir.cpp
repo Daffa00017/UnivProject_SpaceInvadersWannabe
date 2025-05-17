@@ -11,7 +11,7 @@ int main()
 	SetTargetFPS(60);
 
 	Game game;
-
+	
 	while(WindowShouldClose() == false)
 	{
 
@@ -20,7 +20,7 @@ int main()
 		BeginDrawing();
 		ClearBackground(WindowBackground);
 		game.Draw();		
-
+		
 		EndDrawing();
 		
 	}
