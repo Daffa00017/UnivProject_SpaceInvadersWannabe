@@ -86,4 +86,7 @@
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Font\pixelated-futura (1).ttf" />
+  </ItemGroup>
 </Project>

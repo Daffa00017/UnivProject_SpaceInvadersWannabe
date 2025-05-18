@@ -1,16 +1,7 @@
-﻿  Game.cpp
+﻿  DesignPattern_TugasAkhir.cpp
 C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.h(35,47): warning C4305: 'initializing': truncation from 'double' to 'const float'
-  (compiling source file 'Game.cpp')
+  (compiling source file 'DesignPattern_TugasAkhir.cpp')
   
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(21,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(22,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(122,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(123,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(150,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(151,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(186,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(189,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.cpp(303,35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   DesignPattern_TugasAkhir.vcxproj -> C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\x64\Debug\DesignPattern_TugasAkhir.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

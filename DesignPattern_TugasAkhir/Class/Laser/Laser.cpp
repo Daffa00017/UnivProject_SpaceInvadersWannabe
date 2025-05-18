@@ -28,7 +28,7 @@ void Laser::update()
 {
 	position.y += speed;
 	if (active) {
-		if (position.y > GetScreenHeight() || position.y < 0) {
+		if (position.y > GetScreenHeight() - 100 || position.y < 25) {
 			active = false;
 			//std::cout << "Laser Inactive" << std::endl;	//Print string if the laser is inactive
 		}

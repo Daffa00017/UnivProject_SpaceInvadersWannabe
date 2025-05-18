@@ -154,6 +154,9 @@
     <Image Include="Graphics\mystery.png" />
     <Image Include="Graphics\spaceship.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Font\pixelated-futura (1).ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
