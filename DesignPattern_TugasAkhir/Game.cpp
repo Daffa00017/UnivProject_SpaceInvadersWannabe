@@ -4,11 +4,17 @@
 
 Game::Game()
 {
+	//obstaclesetup
 	obstacles = CreateObstacles();
 	//int cellsize = 55;
+	//AlienSetup
 	aliens = CreateAliens();
 	aliensdirection = 1;
 	timeLastAlienLaser = 0.0;
+	//UfoSetup
+	ufoLastSpawnTime = 0.0;
+	ufoSpawnInterval = GetRandomValue(10, 20);
+	
 }
 
 Game::~Game()
@@ -18,6 +24,13 @@ Game::~Game()
 
 void Game::update()
 {
+	double currenttime = GetTime();
+	if (currenttime - ufoLastSpawnTime > ufoSpawnInterval) {
+		ufo.spawn();
+		ufoLastSpawnTime = GetTime();
+		ufoSpawnInterval = GetRandomValue(10, 20);
+	}
+
 	//To make the laser move update position.y
 	for (auto& laser : SpaceShip.lasers) {
 		laser.update();
@@ -32,6 +45,8 @@ void Game::update()
 
 	DeleteInactiveLaser();
 	//std::cout << "Vector size : " << SpaceShip.lasers.size() << std::endl;
+
+	ufo.update();
 }
 
 void Game::Draw()
@@ -55,6 +70,8 @@ void Game::Draw()
 	for (auto& laser : alienLaser) {
 		laser.Draw();
 	}
+
+	ufo.draw();
 }
 
 

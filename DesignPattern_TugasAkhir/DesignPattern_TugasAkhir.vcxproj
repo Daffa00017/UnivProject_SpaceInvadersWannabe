@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Class\Alien\Alien.cpp" />
+    <ClCompile Include="Class\Alien\UFO.cpp" />
     <ClCompile Include="Class\InputManager\InputManager.cpp" />
     <ClCompile Include="Class\Laser\Laser.cpp" />
     <ClCompile Include="Class\Obstacle\Block.cpp" />
@@ -138,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Alien\Alien.h" />
+    <ClInclude Include="Class\Alien\UFO.h" />
     <ClInclude Include="Class\InputManager\InputManager.h" />
     <ClInclude Include="Class\Laser\Laser.h" />
     <ClInclude Include="Class\Obstacle\Block.h" />

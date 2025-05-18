@@ -39,6 +39,9 @@
     <ClCompile Include="Class\Alien\Alien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Class\Alien\UFO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Spaceship\SpaceShip.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Class\Alien\Alien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Alien\UFO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
