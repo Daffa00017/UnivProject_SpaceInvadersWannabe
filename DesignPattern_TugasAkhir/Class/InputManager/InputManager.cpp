@@ -15,3 +15,7 @@ void InputManager::HandleInput(SpaceShip& spaceship)
     }
 
 }
+
+void InputManager::InputGameOver()
+{
+}

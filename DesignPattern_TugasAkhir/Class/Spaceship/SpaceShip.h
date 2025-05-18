@@ -12,6 +12,7 @@ public:
 	void MoveRight();
 	void ShootLaser();
 	Rectangle getRect();
+	void Reset();
 	std::vector<Laser> lasers;
 
 private:

@@ -15,4 +15,5 @@ public:
     }
 
     void HandleInput(class SpaceShip& spaceship);
+    void InputGameOver();
 };

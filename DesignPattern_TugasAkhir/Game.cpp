@@ -3,18 +3,8 @@
 #include <iostream>
 
 Game::Game()
-{
-	//obstaclesetup
-	obstacles = CreateObstacles();
-	//int cellsize = 55;
-	//AlienSetup
-	aliens = CreateAliens();
-	aliensdirection = 1;
-	timeLastAlienLaser = 0.0;
-	//UfoSetup
-	ufoLastSpawnTime = 0.0;
-	ufoSpawnInterval = GetRandomValue(10, 20);
-	
+{ 
+	InitGame();
 }
 
 Game::~Game()
@@ -24,31 +14,40 @@ Game::~Game()
 
 void Game::update()
 {
-	double currenttime = GetTime();
-	if (currenttime - ufoLastSpawnTime > ufoSpawnInterval) {
-		ufo.spawn();
-		ufoLastSpawnTime = GetTime();
-		ufoSpawnInterval = GetRandomValue(10, 20);
+	if (run) {
+		double currenttime = GetTime();
+		if (currenttime - ufoLastSpawnTime > ufoSpawnInterval) {
+			ufo.spawn();
+			ufoLastSpawnTime = GetTime();
+			ufoSpawnInterval = GetRandomValue(10, 20);
+		}
+
+		//To make the laser move update position.y
+		for (auto& laser : SpaceShip.lasers) {
+			laser.update();
+		}
+
+		MoveAliens();
+		alienShootLaser();
+
+		for (auto& laser : alienLaser) {
+			laser.update();
+		}
+
+		DeleteInactiveLaser();
+		//std::cout << "Vector size : " << SpaceShip.lasers.size() << std::endl;
+
+		ufo.update();
+
+		CheckForCollision();
 	}
-
-	//To make the laser move update position.y
-	for (auto& laser : SpaceShip.lasers) {
-		laser.update();
+	else {
+		if (IsKeyPressed(KEY_ENTER)) {
+			Reset();
+			InitGame();
+		}
+		 
 	}
-	
-	MoveAliens();
-	alienShootLaser();
-
-	for (auto& laser : alienLaser) {
-		laser.update();
-	}
-
-	DeleteInactiveLaser();
-	//std::cout << "Vector size : " << SpaceShip.lasers.size() << std::endl;
-
-	ufo.update();
-
-	CheckForCollision();
 }
 
 void Game::Draw()
@@ -80,17 +79,20 @@ void Game::Draw()
 
 void Game::HandleInput()
 {
-	InputManager::GetInstance()->HandleInput(SpaceShip);
-	/*if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_A))
+	if (run) 
 	{
-		SpaceShip.MoveLeft();
+		InputManager::GetInstance()->HandleInput(SpaceShip);
+		/*if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_A))
+		{
+			SpaceShip.MoveLeft();
+		}
+		else if (IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_D)) {
+			SpaceShip.MoveRight();
+		}
+		else if (IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
+			SpaceShip.ShootLaser();
+		}*/
 	}
-	else if (IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_D)) {
-		SpaceShip.MoveRight();
-	}
-	else if (IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-		SpaceShip.ShootLaser();
-	}*/
 
 }
 
@@ -230,7 +232,11 @@ void Game::CheckForCollision()
 	for (auto& Laser : alienLaser) {
 		if (CheckCollisionRecs(Laser.getRect(), SpaceShip.getRect())) {
 			Laser.active = false;
-			std::cout << "SpaceShip Getting Hit" << std::endl;
+			//std::cout << "SpaceShip Getting Hit" << std::endl;
+			lives--;
+			if (lives <= 0) {
+				GameOver();
+			}
 		}
 
 		for (auto& obstacles : obstacles)
@@ -263,8 +269,39 @@ void Game::CheckForCollision()
 		}
 
 		if (CheckCollisionRecs(alien.getRect(), SpaceShip.getRect())) {
-			std::cout << "SpaceShip hit by aliens" << std::endl;
+			//std::cout << "SpaceShip hit by aliens" << std::endl;
+			GameOver();
 		}
 	}
+}
+
+void Game::GameOver()
+{
+	std::cout << "Game Over" << std::endl;
+	run = false;
+}
+
+void Game::Reset()
+{
+	SpaceShip.Reset();
+	aliens.clear();
+	alienLaser.clear();
+	obstacles.clear();
+}
+
+void Game::InitGame()
+{
+	//obstaclesetup
+	obstacles = CreateObstacles();
+	//int cellsize = 55;
+	//AlienSetup
+	aliens = CreateAliens();
+	aliensdirection = 1;
+	timeLastAlienLaser = 0.0;
+	//UfoSetup
+	ufoLastSpawnTime = 0.0;
+	ufoSpawnInterval = GetRandomValue(10, 20);
+	run = true;
+	lives = 3;
 }
 
