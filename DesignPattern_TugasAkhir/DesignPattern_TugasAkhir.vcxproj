@@ -133,6 +133,7 @@
     <ClCompile Include="Class\Laser\Laser.cpp" />
     <ClCompile Include="Class\Obstacle\Block.cpp" />
     <ClCompile Include="Class\Obstacle\Obstacle.cpp" />
+    <ClCompile Include="Class\SoundManager\SoundManager.cpp" />
     <ClCompile Include="Class\Spaceship\SpaceShip.cpp" />
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Class\Laser\Laser.h" />
     <ClInclude Include="Class\Obstacle\Block.h" />
     <ClInclude Include="Class\Obstacle\Obstacle.h" />
+    <ClInclude Include="Class\SoundManager\SoundManager.h" />
     <ClInclude Include="Class\Spaceship\SpaceShip.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>
@@ -156,6 +158,14 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Font\pixelated-futura (1).ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\AlienExplosion1.ogg" />
+    <None Include="Sounds\AlienExplosion2.ogg" />
+    <None Include="Sounds\AlienExplosion3.ogg" />
+    <None Include="Sounds\laser.ogg" />
+    <None Include="Sounds\SpaceShipExplosion1.ogg" />
+    <None Include="Sounds\SpaceShipExplosion2.ogg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

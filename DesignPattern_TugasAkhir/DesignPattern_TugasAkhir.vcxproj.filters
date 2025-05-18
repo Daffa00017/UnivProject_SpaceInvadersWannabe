@@ -42,6 +42,9 @@
     <ClCompile Include="Class\Alien\UFO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Class\SoundManager\SoundManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Spaceship\SpaceShip.h">
@@ -68,6 +71,9 @@
     <ClInclude Include="Class\Alien\UFO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Class\SoundManager\SoundManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\alien_1.png">
@@ -88,5 +94,13 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Font\pixelated-futura (1).ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\AlienExplosion1.ogg" />
+    <None Include="Sounds\AlienExplosion2.ogg" />
+    <None Include="Sounds\AlienExplosion3.ogg" />
+    <None Include="Sounds\laser.ogg" />
+    <None Include="Sounds\SpaceShipExplosion1.ogg" />
+    <None Include="Sounds\SpaceShipExplosion2.ogg" />
   </ItemGroup>
 </Project>

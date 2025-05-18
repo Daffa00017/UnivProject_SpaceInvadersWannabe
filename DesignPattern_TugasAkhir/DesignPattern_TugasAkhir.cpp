@@ -17,7 +17,8 @@ int main()
 	int WindowHeight = 700;
 
 	InitWindow(WindowWidth + offset, WindowHeight + offset * 2, "Projek Tugas Akhir Space Invaders");
-
+	InitAudioDevice();
+	 
 	Font font = LoadFontEx("Font/pixelated-futura (1)", 64, 0, 0);
 	Texture2D SpaceShipImage = LoadTexture("Graphics/spaceship.png");
 
@@ -65,4 +66,5 @@ int main()
 	}
 
 	CloseWindow();
+	CloseAudioDevice();
 }

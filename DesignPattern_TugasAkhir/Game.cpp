@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Class/InputManager/InputManager.h"
+#include "Class/SoundManager/SoundManager.h"
 #include <iostream>
 #include <fstream>
 
@@ -11,6 +12,7 @@ Game::Game()
 Game::~Game()
 {
 	Alien::UnloadImages();
+	SoundManager::GetInstance()->unloadSounds();
 }
 
 void Game::update()
@@ -211,6 +213,7 @@ void Game::CheckForCollision()
 				CheckForHighscore();
 
 				it = aliens.erase(it); //If hit alien, alien gone
+				SoundManager::GetInstance()->PlaySoundEffectsAlienExplosion();
 				Laser.active = false;
 			}
 			else {
@@ -235,6 +238,7 @@ void Game::CheckForCollision()
 		if (CheckCollisionRecs(ufo.getRect(), Laser.getRect())) {
 			ufo.alive = false;
 			Laser.active = false;
+			SoundManager::GetInstance()->PlaySoundEffectsUFOExplosion();
 			score += 500;
 			CheckForHighscore();
 		}
@@ -246,8 +250,10 @@ void Game::CheckForCollision()
 		if (CheckCollisionRecs(Laser.getRect(), SpaceShip.getRect())) {
 			Laser.active = false;
 			//std::cout << "SpaceShip Getting Hit" << std::endl;
+			SoundManager::GetInstance()->PlaySoundEffectsSpaceShipExplosion();
 			lives--;
 			if (lives <= 0) {
+				SoundManager::GetInstance()->PlaySoundEffectsSpaceShipExplosion();
 				GameOver();
 			}
 		}
@@ -283,6 +289,7 @@ void Game::CheckForCollision()
 
 		if (CheckCollisionRecs(alien.getRect(), SpaceShip.getRect())) {
 			//std::cout << "SpaceShip hit by aliens" << std::endl;
+			SoundManager::GetInstance()->PlaySoundEffectsSpaceShipExplosion();
 			GameOver();
 		}
 	}
