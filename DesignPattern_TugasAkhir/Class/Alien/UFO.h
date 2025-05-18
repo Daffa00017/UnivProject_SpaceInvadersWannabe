@@ -8,6 +8,7 @@ class Ufo {
 		void update();
 		void draw();
 		void spawn();
+		Rectangle getRect();
 		bool alive;
 
 	private:

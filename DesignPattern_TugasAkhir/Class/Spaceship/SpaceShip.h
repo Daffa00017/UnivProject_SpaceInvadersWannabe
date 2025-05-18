@@ -11,6 +11,7 @@ public:
 	void MoveLeft();
 	void MoveRight();
 	void ShootLaser();
+	Rectangle getRect();
 	std::vector<Laser> lasers;
 
 private:
