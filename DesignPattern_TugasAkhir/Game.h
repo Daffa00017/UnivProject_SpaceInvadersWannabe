@@ -12,6 +12,8 @@ class Game {
 		void update();
 		void HandleInput();
 		int lives = 3;
+		int score;
+		int Highscore;
 		bool run;
 
 	private:	
@@ -25,6 +27,9 @@ class Game {
 		void GameOver();
 		void Reset();
 		void InitGame();
+		void CheckForHighscore();
+		void SavehighScoreToFile(int highscore);
+		int loadHighScoreFromFile();
 		SpaceShip SpaceShip;
 		std::vector<Obstacle> obstacles;
 		std::vector<Alien> aliens;
