@@ -43,9 +43,17 @@ void Game::update()
 		ufo.update();
 
 		CheckForCollision();
+
+		//aliens empty = next level
+		if (aliens.empty()) {
+			//TraceLog(LOG_INFO, "No More Aliens"); // trying out the raylib version of print string in unreal engine
+			NextLevel();
+		}
+
+
 	}
 	else {
-		if (IsKeyPressed(KEY_ENTER)) {
+		if (IsKeyDown(KEY_ENTER)) {
 			Reset();
 			InitGame();
 		}
@@ -151,7 +159,7 @@ std::vector<Alien> Game::CreateAliens()
 
 
 			float x = 75 + column * cellsize;
-			float y = 110 + row * cellsize;
+			float y = alienLocationDiff + 110 + row * cellsize;
 			aliens.push_back(Alien(alientype, { x,y }));
 		}
 	}
@@ -162,15 +170,16 @@ void Game::MoveAliens()
 {
 	for (auto& alien : aliens) {
 		if (alien.position.x + alien.alienImages[alien.type - 1].width > GetScreenWidth() - 25){
-			aliensdirection = -1;
+			aliensdirection = -1 ;
 			MoveDownAliens(aliensDownPixel);
 		}
 		if (alien.position.x < 25) {
-			aliensdirection = 1;
+			aliensdirection = 1 ;
 			MoveDownAliens(aliensDownPixel);
 		}
 
 		alien.Update(aliensdirection);
+		
 
 	}
 }
@@ -178,7 +187,8 @@ void Game::MoveAliens()
 void Game::MoveDownAliens(int distance)
 {
 	for (auto& alien:aliens) {
-		alien.position.y += distance; 
+		alien.position.y += distance ;
+		
 	}
 }
 
@@ -212,7 +222,7 @@ void Game::CheckForCollision()
 				}
 				CheckForHighscore();
 
-				it = aliens.erase(it); //If hit alien, alien gone
+				it = aliens.erase(it); //If hit alien, alien gone and remove it from aliens in array like (like how unreal does it???)
 				SoundManager::GetInstance()->PlaySoundEffectsAlienExplosion();
 				Laser.active = false;
 			}
@@ -302,6 +312,15 @@ void Game::GameOver()
 
 }
 
+void Game::NextLevel()
+{
+	
+	SpaceShip.Reset();
+	aliens.clear();
+	alienLaser.clear();
+	NextLevelInit();
+}
+
 void Game::Reset()
 {
 	SpaceShip.Reset();
@@ -312,6 +331,11 @@ void Game::Reset()
 
 void Game::InitGame()
 {
+	//init variable (please be on the top before spawning stuff, since its a reset)
+	alienSpeedMultiplier = 0;
+	alienLocationDiff = 0;
+	lives = 3;
+	score = 0;
 	//obstaclesetup
 	obstacles = CreateObstacles();
 	//int cellsize = 55;
@@ -323,9 +347,25 @@ void Game::InitGame()
 	ufoLastSpawnTime = 0.0;
 	ufoSpawnInterval = GetRandomValue(10, 20);
 	run = true;
-	lives = 3;
-	score = 0;
 	Highscore = loadHighScoreFromFile();
+	
+}
+
+void Game::NextLevelInit()
+{
+	//I might be a damn genius for doing this stuff just for sacrificing my sleep 
+	//The after toilet dump effects might be real
+	NumberOfLevel = NumberOfLevel++;
+	std::cout << (NumberOfLevel) << std::endl;
+	alienSpeedMultiplier = alienSpeedMultiplier + 4;
+	aliensDownPixel = aliensDownPixel + alienSpeedMultiplier;
+	alienLocationDiff = alienLocationDiff + 10;
+	//std::cout << (aliensDownPixel) << std::endl;
+	//std::cout << (alienSpeedMultiplier) << std::endl;
+	aliens = CreateAliens();
+	timeLastAlienLaser = 0.0;
+	ufoLastSpawnTime = 0.0;
+	ufoSpawnInterval = GetRandomValue(10 + alienSpeedMultiplier, 20 + alienSpeedMultiplier);
 }
 
 void Game::CheckForHighscore()

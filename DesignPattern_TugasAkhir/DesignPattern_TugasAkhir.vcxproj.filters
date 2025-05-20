@@ -45,6 +45,9 @@
     <ClCompile Include="Class\SoundManager\SoundManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Class\UIManager\UIManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Spaceship\SpaceShip.h">
@@ -74,6 +77,12 @@
     <ClInclude Include="Class\SoundManager\SoundManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Class\UIManager\UIManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\UIManager\UIObserverr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\alien_1.png">
@@ -89,6 +98,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Graphics\spaceship.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graphics\alien_2.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

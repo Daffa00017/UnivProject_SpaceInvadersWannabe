@@ -14,6 +14,7 @@ class Game {
 		int lives = 3;
 		int score;
 		int Highscore;
+		int NumberOfLevel = 1;
 		bool run;
 
 	private:	
@@ -25,8 +26,10 @@ class Game {
 		void alienShootLaser();
 		void CheckForCollision();
 		void GameOver();
+		void NextLevel();
 		void Reset();
 		void InitGame();
+		void NextLevelInit();
 		void CheckForHighscore();
 		void SavehighScoreToFile(int highscore);
 		int loadHighScoreFromFile();
@@ -34,8 +37,10 @@ class Game {
 		std::vector<Obstacle> obstacles;
 		std::vector<Alien> aliens;
 		int cellsize = 55;
+		int alienSpeedMultiplier;
 		int aliensdirection;
 		int aliensDownPixel = 4;
+		int alienLocationDiff;
 		std::vector<Laser> alienLaser;
 		constexpr static float alienLaserInterval = 0.35;
 		float timeLastAlienLaser;
