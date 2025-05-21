@@ -19,6 +19,7 @@ class Game {
 
 	private:	
 		void DeleteInactiveLaser();
+		void NotifyUI();
 		std::vector<Obstacle> CreateObstacles();
 		std::vector<Alien> CreateAliens();
 		void MoveAliens();

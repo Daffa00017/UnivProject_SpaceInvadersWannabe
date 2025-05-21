@@ -13,9 +13,11 @@ int main()
 	int WindowHeight = 700;
 
 	InitWindow(WindowWidth + offset, WindowHeight + offset * 2, "Projek Tugas Akhir Space Invaders");
+	SetWindowIcon(LoadImage("Graphics/alien_3.png"));
 	InitAudioDevice();
-	 
+
 	Texture2D SpaceShipImage = LoadTexture("Graphics/spaceship.png");
+
 	SetTargetFPS(60);
 
 	Game game;
@@ -29,17 +31,19 @@ int main()
 		ClearBackground(WindowBackground);
 		UIManager::GetInstance()->SetupUI();
 
-		//Add text to level and check if the player death or no
+		//This is more or less checking if the game still running or not 
+		//based on the spaceship live if 0 it goes to Game Over if not then 
+		//We run the UI at runtime with all the value from game
 		if (game.run) {
 			UIManager::GetInstance()->RuntimeUI();
-			UIManager::GetInstance()->GameLevelNumber(game.NumberOfLevel);
-			UIManager::GetInstance()->SpaceShipHealth(game.lives, SpaceShipImage);
+			UIManager::GetInstance()->GameLevelNumber();
+			UIManager::GetInstance()->SpaceShipHealth(SpaceShipImage);
 		}
 		else {
 			UIManager::GetInstance()->GameOverUI();
 		}
 		
-		UIManager::GetInstance()->GameScoreUI(game.score, game.Highscore);
+		UIManager::GetInstance()->GameScoreUI();
 		
 		game.Draw();		
 		EndDrawing();

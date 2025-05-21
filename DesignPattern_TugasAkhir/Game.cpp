@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "Class/InputManager/InputManager.h"
 #include "Class/SoundManager/SoundManager.h"
+#include "Class/UIManager/UIManager.h"
 #include <iostream>
 #include <fstream>
 
@@ -93,16 +94,6 @@ void Game::HandleInput()
 	if (run) 
 	{
 		InputManager::GetInstance()->HandleInput(SpaceShip);
-		/*if (IsKeyPressed(KEY_LEFT) || IsKeyPressed(KEY_A))
-		{
-			SpaceShip.MoveLeft();
-		}
-		else if (IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_D)) {
-			SpaceShip.MoveRight();
-		}
-		else if (IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-			SpaceShip.ShootLaser();
-		}*/
 	}
 
 }
@@ -126,6 +117,11 @@ void Game::DeleteInactiveLaser()
 			++it;
 		}
 	}
+}
+
+void Game::NotifyUI()
+{
+	UIManager::GetInstance()->OnGameDataChanged(score, Highscore, NumberOfLevel, lives);
 }
 
 std::vector<Obstacle> Game::CreateObstacles()
@@ -221,6 +217,7 @@ void Game::CheckForCollision()
 					score += 300;
 				}
 				CheckForHighscore();
+				NotifyUI();
 
 				it = aliens.erase(it); //If hit alien, alien gone and remove it from aliens in array like (like how unreal does it???)
 				SoundManager::GetInstance()->PlaySoundEffectsAlienExplosion();
@@ -266,6 +263,7 @@ void Game::CheckForCollision()
 				SoundManager::GetInstance()->PlaySoundEffectsSpaceShipExplosion();
 				GameOver();
 			}
+			NotifyUI();
 		}
 
 		for (auto& obstacles : obstacles)
@@ -356,7 +354,8 @@ void Game::NextLevelInit()
 	//I might be a damn genius for doing this stuff just for sacrificing my sleep 
 	//The after toilet dump effects might be real
 	NumberOfLevel = NumberOfLevel++;
-	std::cout << (NumberOfLevel) << std::endl;
+	NotifyUI();
+	//std::cout << (NumberOfLevel) << std::endl;
 	alienSpeedMultiplier = alienSpeedMultiplier + 4;
 	aliensDownPixel = aliensDownPixel + alienSpeedMultiplier;
 	alienLocationDiff = alienLocationDiff + 10;

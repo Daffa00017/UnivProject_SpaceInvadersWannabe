@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -51,32 +19,20 @@
       "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -85,6 +41,50 @@
     {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|solutionrelative:DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F48ADA0-9F6F-4CC4-B446-792446162B91}|DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.vcxproj|C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -98,17 +98,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DesignPattern_TugasAkhir.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-15T08:55:01.215Z",
               "IsPinned": true,
@@ -120,65 +120,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "UIObserverr.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-19T12:10:37.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Game.cpp",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.cpp",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Game.cpp",
-              "ViewState": "AgIAAHMBAAAAAAAAAAAAAG4BAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAF8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-16T09:14:52.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Game.h",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Game.h",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Game.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-16T09:01:11.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "UIManager.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-19T03:56:48.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "UIManager.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-19T03:56:35.886Z",
               "EditorCaption": ""
@@ -193,12 +193,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-18T21:05:22.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T21:05:22.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "SoundManager.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h",
@@ -210,19 +209,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "UFO.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-17T13:37:02.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "UFO.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h",
@@ -234,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Alien.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp",
@@ -242,12 +241,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-17T06:35:36.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T06:35:36.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "Alien.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h",
@@ -255,25 +253,23 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-17T06:35:29.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T06:35:29.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "SpaceShip.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp",
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T05:47:30.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T05:47:30.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "SpaceShip.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h",
@@ -281,12 +277,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T05:47:44.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T05:47:44.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Block.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h",
@@ -294,12 +289,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T14:48:54.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T14:48:54.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "Block.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.cpp",
@@ -311,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Laser.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h",
@@ -323,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Laser.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp",
@@ -331,12 +325,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T16:54:52.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T16:54:52.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "InputManager.cpp",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp",
@@ -344,12 +337,11 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-17T04:57:03.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:57:03.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "InputManager.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h",
@@ -361,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 9,
               "Title": "Obstacle.h",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UnivProject_SpaceInvadersWannabe\\DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.h",
               "RelativeDocumentMoniker": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.h",

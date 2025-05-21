@@ -1,7 +1,10 @@
 #include "UIManager.h"
+#include "UIObserverr.h"
 #include <string>
 
 UIManager* UIManager::instance = nullptr;
+
+
 
 //A conversion from int to a text for score and high score
 std::string FormatWithLeadingZeros(int number, int width)
@@ -9,6 +12,21 @@ std::string FormatWithLeadingZeros(int number, int width)
 	std::string numbertext = std::to_string(number);
 	int leadingZeros = 5 - numbertext.length();
 	return numbertext = std::string(leadingZeros, '0') + numbertext;
+}
+
+
+void UIManager::AttachObserver(UIObserver* UIobserver)
+{
+	observer = UIobserver;
+}
+
+void UIManager::OnGameDataChanged(int score, int highScore, int level, int lives)
+{
+	lastScore = score;
+	lastHighScore = highScore;
+	lastLevel = level;
+	lastLives = lives;
+	//TraceLog(LOG_INFO, TextFormat("UI Updated: score=%d, highscore=%d, level=%d, lives=%d", score, highScore, level, lives));
 }
 
 void UIManager::SetupUI()
@@ -37,30 +55,31 @@ void UIManager::GameOverUI()
 	DrawTextEx(fontPixel, "[Enter] To Restart", { 440,740 }, 34, 2, YELLOW);
 }
 
-void UIManager::GameScoreUI(int Score, int HighScore)
+void UIManager::GameScoreUI()
 {
 	/*now this is quite yeah,complicated So we have a function that is callable but 
 	with an input of int and that int should be score and highscore get from game.cpp public variable*/
 	DrawTextEx(fontPixel, "Score  ", { 50,15 }, 34, 2, YELLOW);
-	std::string ScoreText = FormatWithLeadingZeros(Score, 5);
+	std::string ScoreText = FormatWithLeadingZeros(lastScore, 5);
 	DrawTextEx(fontPixel, ScoreText.c_str(), { 50,50 }, 34, 2, YELLOW);
 
 	DrawTextEx(fontPixel, "High-Score ", { 530,15 }, 34, 2, YELLOW);
-	std::string HighScoreText = FormatWithLeadingZeros(HighScore, 5);
+	std::string HighScoreText = FormatWithLeadingZeros(lastHighScore, 5);
 	DrawTextEx(fontPixel, HighScoreText.c_str(), { 530,50 }, 34, 2, YELLOW);
 }
 
-void UIManager::GameLevelNumber(int NumberLevel)
+void UIManager::GameLevelNumber()
 {
-	std::string LevelNumber = std::to_string(NumberLevel);
+	std::string LevelNumber = std::to_string(lastLevel);
 	DrawTextEx(fontPixel, LevelNumber.c_str(), { 675,740 }, 34, 2, YELLOW);
 }
 
-void UIManager::SpaceShipHealth(int lives, Texture2D SpaceShipImage)
+void UIManager::SpaceShipHealth(Texture2D SpaceShipImage)
 {
 	float x = 50;
-	for (int i = 0; i < lives; i++) {
+	for (int i = 0; i < lastLives; i++) {
 		DrawTextureV(SpaceShipImage, { x, 745 }, WHITE);
 		x += 50;
 	}
 }
+
