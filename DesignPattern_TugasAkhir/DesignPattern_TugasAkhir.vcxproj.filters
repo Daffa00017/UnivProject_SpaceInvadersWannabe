@@ -83,6 +83,12 @@
     <ClInclude Include="Class\UIManager\UIObserverr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Class\UIManager\ShootLasersCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Command\ICommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\alien_1.png">

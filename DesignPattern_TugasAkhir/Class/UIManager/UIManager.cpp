@@ -1,5 +1,4 @@
 #include "UIManager.h"
-#include "UIObserverr.h"
 #include <string>
 
 UIManager* UIManager::instance = nullptr;

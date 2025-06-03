@@ -1,6 +1,15 @@
 #include "InputManager.h"
+#include "../UIManager/ShootLasersCommand.h"
+
 
 InputManager* InputManager::instance = nullptr;
+
+
+void InputManager::RegisterCommands(SpaceShip* ship)
+{
+    shootCommand = new ShootLaserCommand(ship);// for now we only doing the laser one for command pattern hehe
+
+}
 
 void InputManager::HandleInput(SpaceShip& spaceship)
 {
@@ -10,8 +19,8 @@ void InputManager::HandleInput(SpaceShip& spaceship)
     else if (IsKeyPressed(KEY_RIGHT) || IsKeyPressed(KEY_D)) {
         spaceship.MoveRight();
     }
-    else if (IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-        spaceship.ShootLaser();
+    else if ((IsKeyDown(KEY_SPACE) || IsMouseButtonDown(MOUSE_BUTTON_LEFT)) && shootCommand) {
+        shootCommand->Execute();
     }
 
 }

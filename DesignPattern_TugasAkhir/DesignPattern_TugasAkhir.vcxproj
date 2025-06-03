@@ -142,12 +142,14 @@
   <ItemGroup>
     <ClInclude Include="Class\Alien\Alien.h" />
     <ClInclude Include="Class\Alien\UFO.h" />
+    <ClInclude Include="Class\Command\ICommand.h" />
     <ClInclude Include="Class\InputManager\InputManager.h" />
     <ClInclude Include="Class\Laser\Laser.h" />
     <ClInclude Include="Class\Obstacle\Block.h" />
     <ClInclude Include="Class\Obstacle\Obstacle.h" />
     <ClInclude Include="Class\SoundManager\SoundManager.h" />
     <ClInclude Include="Class\Spaceship\SpaceShip.h" />
+    <ClInclude Include="Class\UIManager\ShootLasersCommand.h" />
     <ClInclude Include="Class\UIManager\UIManager.h" />
     <ClInclude Include="Class\UIManager\UIObserverr.h" />
     <ClInclude Include="Game.h" />

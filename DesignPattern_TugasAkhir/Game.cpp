@@ -7,6 +7,7 @@
 
 Game::Game()
 { 
+	InputManager::GetInstance()->RegisterCommands(&SpaceShip); //register command pattern 
 	InitGame();
 }
 

@@ -11,12 +11,13 @@ SoundManager::SoundManager() {
 void SoundManager::playmusic()
 {
     //i have yet to find a good 8 bit music for space invaders lmao 
-    //(apart of the youtube one in which, im not sure if it ok for the law)
+    //(apart of the youtube one in which, im not sure if it ok in term of copyright law)
 }
 
 void SoundManager::loadSounds()
 {
     //load all used sound (albeit this is not optimize since it would make the startup much longer)
+    //Eyy now we load the sound when we need the sound (still tho we load all the sound once but not on startup)
     AlienExplosion0 = LoadSound("Sounds/AlienExplosion1.ogg");
     AlienExplosion1 = LoadSound("Sounds/AlienExplosion2.ogg");
     AlienExplosion2 = LoadSound("Sounds/AlienExplosion3.ogg");
