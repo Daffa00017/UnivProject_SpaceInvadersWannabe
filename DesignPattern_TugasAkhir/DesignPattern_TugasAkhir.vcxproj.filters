@@ -89,6 +89,9 @@
     <ClInclude Include="Class\Command\ICommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\alien_1.png">
@@ -109,6 +112,9 @@
     <Image Include="Graphics\alien_2.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\x64\Debug\Graphics\alien_2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Font Include="Font\pixelated-futura (1).ttf" />
@@ -120,5 +126,10 @@
     <None Include="Sounds\laser.ogg" />
     <None Include="Sounds\SpaceShipExplosion1.ogg" />
     <None Include="Sounds\SpaceShipExplosion2.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DesignPattern_TugasAkhir.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

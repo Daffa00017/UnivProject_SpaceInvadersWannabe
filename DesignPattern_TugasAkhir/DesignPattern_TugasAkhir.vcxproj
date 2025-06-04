@@ -153,8 +153,10 @@
     <ClInclude Include="Class\UIManager\UIManager.h" />
     <ClInclude Include="Class\UIManager\UIObserverr.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\x64\Debug\Graphics\alien_2.ico" />
     <Image Include="Graphics\alien_1.png" />
     <Image Include="Graphics\alien_2.ico" />
     <Image Include="Graphics\alien_2.png" />
@@ -172,6 +174,9 @@
     <None Include="Sounds\laser.ogg" />
     <None Include="Sounds\SpaceShipExplosion1.ogg" />
     <None Include="Sounds\SpaceShipExplosion2.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DesignPattern_TugasAkhir.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
