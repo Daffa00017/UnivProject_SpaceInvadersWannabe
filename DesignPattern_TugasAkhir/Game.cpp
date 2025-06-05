@@ -133,7 +133,7 @@ std::vector<Obstacle> Game::CreateObstacles()
 
 	for (int i = 0; i < 4; i++) {
 		float offsetX = (i + 1) * gap + i * obstacleWidth;
-		obstacles.push_back(Obstacle({offsetX, float(GetScreenHeight()-200)} ) );
+		obstacles.push_back(Obstacle({offsetX, float(GetScreenHeight()-300)} ) );
 	}
 	return obstacles;
 }
@@ -224,6 +224,7 @@ void Game::CheckForCollision()
 			}
 		}
 
+
 		// Check Laser collision with UFO
 		if (CheckCollisionRecs(ufo.getRect(), Laser.getRect())) {
 			ufo.alive = false;
@@ -231,6 +232,12 @@ void Game::CheckForCollision()
 			SoundManager::GetInstance()->PlaySoundEffectsUFOExplosion();
 			score += 500;
 			CheckForHighscore();
+
+			if (lives < 3)
+			{
+				lives++;
+				NotifyUI();
+			}
 		}
 	}
 

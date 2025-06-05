@@ -20,6 +20,9 @@ void SpaceShip::Draw()
 
 	DrawTextureV(Image, position, WHITE);
 
+	// Debug: draw hitbox in RED
+	Rectangle r = getRect();
+	DrawRectangleLines(r.x, r.y, r.width, r.height, RED);
 }
 
 void SpaceShip::MoveLeft()
@@ -49,7 +52,7 @@ void SpaceShip::ShootLaser()
 
 Rectangle SpaceShip::getRect()
 {
-	return{ position.x, position.y, float(Image.width) };
+	return{ position.x + (Image.width/4), position.y, float(Image.width/2) };
 }
 
 void SpaceShip::Reset() 

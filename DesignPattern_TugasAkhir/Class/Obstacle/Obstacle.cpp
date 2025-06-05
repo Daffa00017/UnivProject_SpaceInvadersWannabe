@@ -27,7 +27,7 @@ Obstacle::Obstacle(Vector2 position)
         for (unsigned int column = 0; column < grid[0].size(); ++column) {
             if (grid[row][column] == 1) {
                 float pos_x = position.x + column * 3;
-                float pos_y = position.y + row * 3;
+                float pos_y = position.y + row * 4;
                 Block block = Block({pos_x, pos_y});
                 blocks.push_back(block);
             }
