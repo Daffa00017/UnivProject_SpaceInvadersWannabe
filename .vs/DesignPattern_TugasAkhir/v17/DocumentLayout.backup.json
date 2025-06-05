@@ -136,8 +136,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\DesignPattern_TugasAkhir.rc",
               "ViewState": "AgIAACYAAAAAAAAAAAAEwDUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-05T00:48:16.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T00:48:16.528Z"
             },
             {
               "$type": "Document",
@@ -149,8 +148,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Command\\ICommand.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-03T13:07:09.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T13:07:09.282Z"
             },
             {
               "$type": "Document",
@@ -162,8 +160,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\ShootLasersCommand.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-03T13:01:45.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T13:01:45.845Z"
             },
             {
               "$type": "Document",
@@ -175,8 +172,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIObserverr.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-19T12:10:37.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T12:10:37.323Z"
             },
             {
               "$type": "Document",
@@ -188,8 +184,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Game.cpp",
               "ViewState": "AgIAALcAAAAAAAAAAAAmwMYAAACsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T09:14:52.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T09:14:52.835Z"
             },
             {
               "$type": "Document",
@@ -201,8 +196,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Game.h",
               "ViewState": "AgIAABMAAAAAAAAAAAAUwAwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T09:01:11.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T09:01:11.655Z"
             },
             {
               "$type": "Document",
@@ -214,8 +208,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-19T03:56:48.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T03:56:48.847Z"
             },
             {
               "$type": "Document",
@@ -227,8 +220,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\UIManager\\UIManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-19T03:56:35.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T03:56:35.886Z"
             },
             {
               "$type": "Document",
@@ -240,8 +232,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.cpp",
               "ViewState": "AgIAAAQAAAAAAAAAAABBwBMAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-18T21:05:22.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T21:05:22.957Z"
             },
             {
               "$type": "Document",
@@ -253,8 +244,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\SoundManager\\SoundManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-18T21:05:15.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T21:05:15.64Z"
             },
             {
               "$type": "Document",
@@ -266,8 +256,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\UFO.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-17T13:37:02.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T13:37:02.91Z"
             },
             {
               "$type": "Document",
@@ -279,8 +268,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\UFO.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-17T13:36:56.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T13:36:56.179Z"
             },
             {
               "$type": "Document",
@@ -292,8 +280,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.cpp",
               "ViewState": "AgIAACIAAAAAAAAAAAAUwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-17T06:35:36.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T06:35:36.025Z"
             },
             {
               "$type": "Document",
@@ -305,8 +292,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Alien\\Alien.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-17T06:35:29.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T06:35:29.312Z"
             },
             {
               "$type": "Document",
@@ -318,8 +304,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.cpp",
               "ViewState": "AgIAABcAAAAAAAAAAAAswCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T05:47:30.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T05:47:30.403Z"
             },
             {
               "$type": "Document",
@@ -331,8 +316,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Spaceship\\SpaceShip.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T05:47:44.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T05:47:44.918Z"
             },
             {
               "$type": "Document",
@@ -344,8 +328,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T14:48:54.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T14:48:54.564Z"
             },
             {
               "$type": "Document",
@@ -357,8 +340,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Block.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T14:48:48.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T14:48:48.931Z"
             },
             {
               "$type": "Document",
@@ -370,8 +352,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Laser\\Laser.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T09:39:28.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T09:39:28.794Z"
             },
             {
               "$type": "Document",
@@ -383,8 +364,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Laser\\Laser.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T16:54:52.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T16:54:52.021Z"
             },
             {
               "$type": "Document",
@@ -396,8 +376,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-17T04:57:03.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:57:03.257Z"
             },
             {
               "$type": "Document",
@@ -409,8 +388,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\InputManager\\InputManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-17T04:57:14.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:57:14.788Z"
             },
             {
               "$type": "Document",
@@ -422,8 +400,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-16T14:44:30.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T14:44:30.261Z"
             },
             {
               "$type": "Document",
@@ -435,8 +412,7 @@
               "RelativeToolTip": "DesignPattern_TugasAkhir\\Class\\Obstacle\\Obstacle.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-16T14:44:39.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T14:44:39.865Z"
             }
           ]
         }
