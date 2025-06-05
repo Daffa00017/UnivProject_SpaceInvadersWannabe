@@ -2,7 +2,7 @@
 
 Texture2D Alien::alienImages[3] = {};
 
-Alien::Alien(int type, Vector2 Position) : type(type), position(Position)
+Alien::Alien(int type, Vector2 position, int health) : type(type), position(position)
 {
     if (alienImages[type - 1].id == 0) {
         switch (type) {
@@ -18,9 +18,9 @@ Alien::Alien(int type, Vector2 Position) : type(type), position(Position)
         }
     }
 
-    // minimal hp setup by type
-    hp = (type == 3) ? 3 : (type == 2) ? 2 : 1;
+    hp = health; // passed in via factory
 }
+
 
 void Alien::Draw()
 {

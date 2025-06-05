@@ -141,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Alien\Alien.h" />
+    <ClInclude Include="Class\Alien\AlienFactory.H" />
     <ClInclude Include="Class\Alien\UFO.h" />
     <ClInclude Include="Class\Command\ICommand.h" />
     <ClInclude Include="Class\InputManager\InputManager.h" />

@@ -2,6 +2,7 @@
 #include "Class/InputManager/InputManager.h"
 #include "Class/SoundManager/SoundManager.h"
 #include "Class/UIManager/UIManager.h"
+#include "Class/Alien/AlienFactory.h"
 #include <iostream>
 #include <fstream>
 
@@ -142,22 +143,14 @@ std::vector<Alien> Game::CreateAliens()
 	std::vector<Alien> aliens;
 	for (int row = 0; row < 5; row++) {
 		for (int column = 0; column < 11; column++) {
-			//Check the row of the alien from up to apply alien type
-			int alientype;
-				if (row == 0) {
-					alientype = 3;
-				}
-				else if (row == 1 || row == 2) {
-					alientype = 2;
-				}
-				else {
-					alientype = 1;
-				}	
-
-
+			int alientype = (row == 0) ? 3 : (row == 1 || row == 2) ? 2 : 1;
 			float x = 75 + column * cellsize;
 			float y = alienLocationDiff + 110 + row * cellsize;
-			aliens.push_back(Alien(alientype, { x,y }));
+
+			// Use the factory to create aliens with appropriate health
+			Alien* alien = AlienFactory::CreateAlien(alientype, { x, y });
+			aliens.push_back(*alien); // Add the created alien to the vector
+			delete alien; // Delete the pointer since we copied it into the vector
 		}
 	}
 	return aliens;

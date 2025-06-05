@@ -3,7 +3,7 @@
 
 class Alien {
 public:
-    Alien(int type, Vector2 Position);
+    Alien(int type, Vector2 position, int health);  // health to constructor
     void Draw();
     void Update(int direction);
     int GetType() const;
@@ -13,10 +13,9 @@ public:
     static void UnloadImages();
 
     static Texture2D alienImages[3];
-
-    Vector2 position;  // make public for minimal change (or add getter if preferred)
+    Vector2 position;
 
 private:
     int type;
-    int hp; // add hp here
+    int hp; // set through factory
 };
