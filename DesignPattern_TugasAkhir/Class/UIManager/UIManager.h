@@ -22,7 +22,7 @@ class UIManager : public UIObserver {
                 instance = new UIManager(); //lazy initialization
             return instance;
         }
-
+        //UIObserver Subscribe system (its what im getting from how obersver work)
         void AttachObserver(UIObserver* UIobserver);
         void OnGameDataChanged(int score, int highScore, int level, int lives) override;
 

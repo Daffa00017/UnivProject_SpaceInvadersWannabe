@@ -11,7 +11,7 @@ int main()
 	int WindowWidth = 750;
 	int WindowHeight = 700;
 
-	InitWindow(WindowWidth + offset, WindowHeight + offset * 2, "Projek Tugas Akhir Space Invaders");
+	InitWindow(WindowWidth + offset, WindowHeight + offset * 2, "Trash Invaders");
 	SetWindowIcon(LoadImage("Graphics/alien_3.png"));
 	InitAudioDevice();
 

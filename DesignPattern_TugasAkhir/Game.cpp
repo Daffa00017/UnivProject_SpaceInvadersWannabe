@@ -9,6 +9,8 @@
 Game::Game()
 { 
 	InputManager::GetInstance()->RegisterCommands(&SpaceShip); //register command pattern 
+	Highscore = 0;
+	NotifyUI();
 	InitGame();
 }
 
@@ -133,7 +135,7 @@ std::vector<Obstacle> Game::CreateObstacles()
 
 	for (int i = 0; i < 4; i++) {
 		float offsetX = (i + 1) * gap + i * obstacleWidth;
-		obstacles.push_back(Obstacle({offsetX, float(GetScreenHeight()-300)} ) );
+		obstacles.push_back(Obstacle({offsetX, float(GetScreenHeight()-250)} ) );
 	}
 	return obstacles;
 }
@@ -179,6 +181,9 @@ void Game::MoveDownAliens(int distance)
 {
 	for (auto& alien:aliens) {
 		alien.position.y += distance ;
+		if (alien.position.y + alien.alienImages[alien.GetType() - 1].height > GetScreenHeight() - 25) {
+			GameOver();
+		}
 		
 	}
 }
@@ -232,7 +237,7 @@ void Game::CheckForCollision()
 			SoundManager::GetInstance()->PlaySoundEffectsUFOExplosion();
 			score += 500;
 			CheckForHighscore();
-
+			NotifyUI();
 			if (lives < 3)
 			{
 				lives++;
@@ -335,7 +340,8 @@ void Game::InitGame()
 	ufoLastSpawnTime = 0.0;
 	ufoSpawnInterval = GetRandomValue(10, 20);
 	run = true;
-	Highscore = loadHighScoreFromFile();
+	//Highscore = loadHighScoreFromFile();
+	NotifyUI();
 	
 }
 
@@ -346,15 +352,15 @@ void Game::NextLevelInit()
 	NumberOfLevel = NumberOfLevel++;
 	NotifyUI();
 	//std::cout << (NumberOfLevel) << std::endl;
-	alienSpeedMultiplier = alienSpeedMultiplier + 4;
+	alienSpeedMultiplier = alienSpeedMultiplier + 1;
 	aliensDownPixel = aliensDownPixel + alienSpeedMultiplier;
-	alienLocationDiff = alienLocationDiff + 10;
+	alienLocationDiff = alienLocationDiff + 1;
 	//std::cout << (aliensDownPixel) << std::endl;
 	//std::cout << (alienSpeedMultiplier) << std::endl;
 	aliens = CreateAliens();
 	timeLastAlienLaser = 0.0;
 	ufoLastSpawnTime = 0.0;
-	ufoSpawnInterval = GetRandomValue(10 + alienSpeedMultiplier, 20 + alienSpeedMultiplier);
+	ufoSpawnInterval = GetRandomValue(10 + alienSpeedMultiplier, 5 + alienSpeedMultiplier);
 }
 
 void Game::CheckForHighscore()
