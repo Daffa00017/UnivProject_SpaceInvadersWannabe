@@ -13,7 +13,7 @@ public:
 	void ShootLaser();
 	Rectangle getRect();
 	void Reset();
-	std::vector<Laser> lasers;
+	std::vector<Laser> Lasers;
 
 private:
 	Texture2D Image;

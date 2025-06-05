@@ -2,18 +2,21 @@
 #include <raylib.h>
 
 class Alien {
-	public:
-		Alien(int type, Vector2 Position);
-		void Draw();
-		void Update(int direction);
-		int GetType();
-		static void UnloadImages();
-		Rectangle getRect();
-		static Texture2D alienImages[3];
-		int type;
-		Vector2 position;
+public:
+    Alien(int type, Vector2 Position);
+    void Draw();
+    void Update(int direction);
+    int GetType() const;
+    void TakeHit();
+    bool IsDead() const;
+    Rectangle getRect() const;
+    static void UnloadImages();
 
-	private:
+    static Texture2D alienImages[3];
 
+    Vector2 position;  // make public for minimal change (or add getter if preferred)
+
+private:
+    int type;
+    int hp; // add hp here
 };
-

@@ -27,20 +27,20 @@ void Game::update()
 			ufoSpawnInterval = GetRandomValue(10, 20);
 		}
 
-		//To make the laser move update position.y
-		for (auto& laser : SpaceShip.lasers) {
-			laser.update();
+		//To make the Laser move update position.y
+		for (auto& Laser : SpaceShip.Lasers) {
+			Laser.update();
 		}
 
 		MoveAliens();
 		alienShootLaser();
 
-		for (auto& laser : alienLaser) {
-			laser.update();
+		for (auto& Laser : alienLaser) {
+			Laser.update();
 		}
 
 		DeleteInactiveLaser();
-		//std::cout << "Vector size : " << SpaceShip.lasers.size() << std::endl;
+		//std::cout << "Vector size : " << SpaceShip.Lasers.size() << std::endl;
 
 		ufo.update();
 
@@ -68,9 +68,9 @@ void Game::Draw()
 	//to render the spaceship
 	SpaceShip.Draw();
 
-	//to draw or render the laser
-	for (auto& laser : SpaceShip.lasers) {
-		laser.Draw();
+	//to draw or render the Laser
+	for (auto& Laser : SpaceShip.Lasers) {
+		Laser.Draw();
 	}
 
 	for (auto& obstacle : obstacles) {
@@ -81,8 +81,8 @@ void Game::Draw()
 		alien.Draw();
 	}
 
-	for (auto& laser : alienLaser) {
-		laser.Draw();
+	for (auto& Laser : alienLaser) {
+		Laser.Draw();
 	}
 
 	ufo.draw();
@@ -101,10 +101,10 @@ void Game::HandleInput()
 
 void Game::DeleteInactiveLaser()
 {
-	//Check if the laser is active or not if it not active we erase it
-	for (auto it = SpaceShip.lasers.begin(); it != SpaceShip.lasers.end();) {
+	//Check if the Laser is active or not if it not active we erase it
+	for (auto it = SpaceShip.Lasers.begin(); it != SpaceShip.Lasers.end();) {
 		if (!it->active) {
-			it = SpaceShip.lasers.erase(it);
+			it = SpaceShip.Lasers.erase(it);
 		}
 		else {
 			++it;
@@ -166,7 +166,8 @@ std::vector<Alien> Game::CreateAliens()
 void Game::MoveAliens()
 {
 	for (auto& alien : aliens) {
-		if (alien.position.x + alien.alienImages[alien.type - 1].width > GetScreenWidth() - 25){
+		if (alien.position.x + alien.alienImages[alien.GetType() - 1].width > GetScreenWidth() - 25)
+		{
 			aliensdirection = -1 ;
 			MoveDownAliens(aliensDownPixel);
 		}
@@ -195,7 +196,7 @@ void Game::alienShootLaser()
 	if(currenttime - timeLastAlienLaser >= alienLaserInterval && !aliens.empty()){
 		int randomIndex = GetRandomValue(0, aliens.size() - 1);
 		Alien& alien = aliens[randomIndex];
-		alienLaser.push_back(Laser({ alien.position.x + alien.alienImages[alien.type - 1].width / 2, alien.position.y + alien.alienImages[alien.type - 1].height }, 6));
+		alienLaser.push_back(Laser({ alien.position.x + alien.alienImages[alien.GetType() - 1].width / 2, alien.position.y + alien.alienImages[alien.GetType() - 1].height }, 6));
 		timeLastAlienLaser = GetTime();
 	}
 }
@@ -203,46 +204,34 @@ void Game::alienShootLaser()
 void Game::CheckForCollision()
 {
 	//SpaceShip Laser with aliens and obstacle
-	for (auto& Laser : SpaceShip.lasers) 
+	for (auto& Laser : SpaceShip.Lasers)
 	{
 		auto it = aliens.begin();
 		while (it != aliens.end()) {
-			if (CheckCollisionRecs(it->getRect(), Laser.getRect())) 
-			{
-				if (it->type == 1) {
-					score += 100;
-				}else if (it->type == 2) {
-					score += 200;
-				}
-				else if (it->type == 3) {
-					score += 300;
-				}
-				CheckForHighscore();
-				NotifyUI();
-
-				it = aliens.erase(it); //If hit alien, alien gone and remove it from aliens in array like (like how unreal does it???)
-				SoundManager::GetInstance()->PlaySoundEffectsAlienExplosion();
-				Laser.active = false;
-			}
-			else {
-				++it;
-			}
-		}
-
-		for (auto& obstacles : obstacles) 
-		{
-			auto it = obstacles.blocks.begin();
-			while (it != obstacles.blocks.end()) {
-				if (CheckCollisionRecs(it -> getRect(), Laser.getRect())) {
-					it = obstacles.blocks.erase(it);
-					Laser.active = false;
+			if (CheckCollisionRecs(it->getRect(), Laser.getRect())) {
+				Laser.active = false;     // Laser deactivates regardless
+				it->TakeHit();            // Alien loses 1 HP
+				if (it->IsDead()) {       // Only remove if HP <= 0
+					switch (it->GetType()) {
+					case 1: score += 100; break;
+					case 2: score += 200; break;
+					case 3: score += 300; break;
+					}
+					CheckForHighscore();
+					NotifyUI();
+					SoundManager::GetInstance()->PlaySoundEffectsAlienExplosion();
+					it = aliens.erase(it); // Remove from list
 				}
 				else {
-					++it;
+					++it; // Still alive, keep it
 				}
+			}
+			else {
+				++it; // No collision, move on
 			}
 		}
 
+		// Check Laser collision with UFO
 		if (CheckCollisionRecs(ufo.getRect(), Laser.getRect())) {
 			ufo.alive = false;
 			Laser.active = false;

@@ -7,7 +7,7 @@ InputManager* InputManager::instance = nullptr;
 
 void InputManager::RegisterCommands(SpaceShip* ship)
 {
-    shootCommand = new ShootLaserCommand(ship);// for now we only doing the laser one for command pattern hehe
+    shootCommand = new ShootLaserCommand(ship);// for now we only doing the Laser one for command pattern hehe
 
 }
 

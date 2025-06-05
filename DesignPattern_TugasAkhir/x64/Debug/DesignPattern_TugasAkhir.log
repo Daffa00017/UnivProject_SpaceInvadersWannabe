@@ -1,7 +1,1 @@
-﻿  DesignPattern_TugasAkhir.cpp
-C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\DesignPattern_TugasAkhir\Game.h(46,47): warning C4305: 'initializing': truncation from 'double' to 'const float'
-  (compiling source file 'DesignPattern_TugasAkhir.cpp')
-  
-  DesignPattern_TugasAkhir.vcxproj -> C:\Users\User\source\repos\UnivProject_SpaceInvadersWannabe\x64\Debug\DesignPattern_TugasAkhir.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
+﻿  DesignPattern_TugasAkhir.vcxproj -> D:\Design Pattern\UnivProject_SpaceInvadersWannabe\x64\Debug\DesignPattern_TugasAkhir.exe

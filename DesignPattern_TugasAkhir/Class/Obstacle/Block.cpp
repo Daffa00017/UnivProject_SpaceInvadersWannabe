@@ -16,6 +16,6 @@ Rectangle Block::getRect()
 }
 
 void Block::Draw() {
-	DrawRectangle(position.x, position.y, 3, 3, YELLOW);
+	DrawRectangle(position.x, position.y, 3, 3, GRAY);
 }
 
