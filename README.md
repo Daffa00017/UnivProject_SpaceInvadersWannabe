@@ -8,13 +8,13 @@ This simple project act as me and my friend lab000 attempt to learn about design
 ### What design pattern that is used in this project?
 
 * Singleton pattern
-** Input manager, Sound manager and UI Manager.
+  * Input manager, Sound manager and UI Manager.
 * Observer pattern
-** UI Observer that is used for broadcasting score and high score to UI Manager.
+  * UI Observer that is used for broadcasting score and high score to UI Manager.
 * Command pattern
-** Shoot command, this command pattern is simply to more encapsulate the function inside Input manager. So instead of the shoot function being in the Input manager, we make that a command pattern by making a new class just for this function.
+  * Shoot command, this command pattern is simply to more encapsulate the function inside Input manager. So instead of the shoot function being in the Input manager, we make that a command pattern by making a new class just for this function.
 * Factory pattern
-** Aliens.
+  * Aliens.
 
 
 ## Acknowledgments
