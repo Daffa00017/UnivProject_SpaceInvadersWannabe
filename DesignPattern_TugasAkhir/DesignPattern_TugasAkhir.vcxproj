@@ -146,6 +146,8 @@
     <ClCompile Include="Class\UIManager\UIManager.cpp" />
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Leaderboard.cpp" />
+    <ClCompile Include="ProfileManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Alien\Alien.h" />
@@ -162,6 +164,8 @@
     <ClInclude Include="Class\UIManager\UIManager.h" />
     <ClInclude Include="Class\UIManager\UIObserverr.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Leaderboard.h" />
+    <ClInclude Include="ProfileManager.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

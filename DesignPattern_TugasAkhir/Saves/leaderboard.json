@@ -1,0 +1,22 @@
+{
+  "leaderboard": [
+    {
+      "username": "Dafa",
+      "score": 3300,
+      "level": 1,
+      "timeSec": 21.461,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 21.461
+    },
+    {
+      "username": "FERI",
+      "score": 500,
+      "level": 1,
+      "timeSec": 19.1637,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 19.1637
+    }
+  ]
+}

@@ -13,11 +13,13 @@ public:
 	void ShootLaser();
 	Rectangle getRect();
 	void Reset();
+	void SetTexture(const Texture2D& newTex);
 	std::vector<Laser> Lasers;
 
 private:
 	Texture2D Image;
 	Vector2 position;
+	bool ownsTexture = true;
 	int MovementRight = 30;
 	int MovementLeft = 30;
 	double lastFireTime;

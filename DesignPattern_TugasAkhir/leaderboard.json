@@ -1,0 +1,13 @@
+{
+  "leaderboard": [
+    {
+      "username": "DEDE",
+      "score": 1600,
+      "level": 1,
+      "timeSec": 17.247,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 17.2456
+    }
+  ]
+}

@@ -12,7 +12,9 @@ SpaceShip::SpaceShip()
 
 SpaceShip::~SpaceShip()
 {
-	UnloadTexture(Image);
+	if (ownsTexture) {
+		UnloadTexture(Image); 
+	}
 }
 
 void SpaceShip::Draw()
@@ -60,4 +62,16 @@ void SpaceShip::Reset()
 	position.x = (GetScreenWidth() - Image.width) / 2.0f;
 	position.y = GetScreenHeight() - Image.height - 100;
 	Lasers.clear();
+}
+
+void SpaceShip::SetTexture(const Texture2D& newTex)
+{
+	float oldCenterX = position.x + Image.width * 0.5f;
+
+	Image = newTex;
+	ownsTexture = false; 
+	position.x = oldCenterX - Image.width * 0.5f;
+	if (position.x < 25) position.x = 25;
+	float maxX = GetScreenWidth() - Image.width - 25;
+	if (position.x > maxX) position.x = maxX;
 }
