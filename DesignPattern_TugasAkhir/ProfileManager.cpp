@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <cctype>
 
+
 // ----------- tiny helpers -----------
 std::string ProfileManager::Trim(const std::string& s) {
     size_t a = 0, b = s.size();
@@ -27,14 +28,16 @@ std::string ProfileManager::JoinCSV(const std::vector<std::string>& v) {
     std::ostringstream o;
     for (size_t i = 0; i < v.size(); ++i) { if (i) o << ','; o << v[i]; }
     return o.str();
+
 }
+
 
 // ----------- disk I/O (INI-like) -----------
 bool ProfileManager::LoadFromDisk() {
     std::ifstream f(kPath());
     if (!f.is_open()) { loaded = false; return false; }
 
-    Profile p; // defaults set
+    Profile p;
     std::string line;
     while (std::getline(f, line)) {
         line = Trim(line);
@@ -44,12 +47,14 @@ bool ProfileManager::LoadFromDisk() {
         std::string key = Trim(line.substr(0, eq));
         std::string val = Trim(line.substr(eq + 1));
 
-        if (key == "username")        p.username = val;
-        else if (key == "highscore")  p.highscore = std::max(0, std::stoi(val));
-        else if (key == "maxlevel")   p.maxLevel = std::max(1, std::stoi(val));
-        else if (key == "selected")   p.selectedShipId = val;
+        if (key == "username")            p.username = val;
+        else if (key == "highscore")      p.highscore = std::max(0, std::stoi(val));
+        else if (key == "maxlevel")       p.maxLevel = std::max(1, std::stoi(val));
+        else if (key == "selected")       p.selectedShipId = val;
         else if (key == "lastUpdatedSec") p.lastUpdatedSec = std::stod(val);
-        else if (key == "unlocked")   SplitCSV(val, p.unlockedShips);
+        else if (key == "unlocked")       SplitCSV(val, p.unlockedShips);
+        // NEW (plain text password)
+        else if (key == "password")       p.password = val;
     }
     current = p;
     loaded = true;
@@ -67,21 +72,37 @@ bool ProfileManager::SaveToDisk() const {
     f << "selected=" << current.selectedShipId << "\n";
     f << "unlocked=" << JoinCSV(current.unlockedShips) << "\n";
     f << "lastUpdatedSec=" << current.lastUpdatedSec << "\n";
+    // NEW
+    f << "password=" << current.password << "\n";
     return true;
 }
 
+
 // ----------- login -----------
-bool ProfileManager::Login(const std::string& username) {
-    // try load existing (ok if fails)
+// Plain-text variant
+bool ProfileManager::Login(const std::string& username, const std::string& password)
+{
     LoadFromDisk();
 
+    // Same saved user?
     if (loaded && current.username == username) {
-        return true; // same user
+        // If the saved profile has a password, require it
+        if (!current.password.empty()) {
+            return !password.empty() && (current.password == password);
+        }
+        // First-time set for this user (allow empty if you want, or require non-empty)
+        current.password = password;
+        SaveToDisk();
+        return true;
     }
 
-    // new or switching user -> create/reset profile
+    // NEW or SWITCH user:
+    // Do NOT allow creation/switch with an empty password (prevents the bypass)
+    if (password.empty()) return false;
+
     Profile p;
     p.username = username;
+    p.password = password;
     p.selectedShipId = "Classic";
     p.unlockedShips = { "Classic" };
     current = p;
@@ -89,6 +110,10 @@ bool ProfileManager::Login(const std::string& username) {
     SaveToDisk();
     return true;
 }
+
+
+
+
 
 // ----------- game helpers -----------
 void ProfileManager::SnapshotFromGame(int highscore, int maxLevel, const std::string& selectedShipId, double nowSec) {

@@ -54,6 +54,9 @@
     <ClCompile Include="Leaderboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NetClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\Spaceship\SpaceShip.h">
@@ -105,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Leaderboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

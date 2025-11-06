@@ -4,12 +4,14 @@
 #include <vector>
 
 struct LBEntry {
-    std::string name;                    // username (unique key)
-    int    score = 0;              // best score
-    int    level = 1;              // best level reached
-    double timeSec = 0.0;            // timestamp of best (for tie-break)
+    std::string name;            // username (unique key)
+    // NEW: plain-text password (dev-only)
+    std::string password;        // "" if unknown/not set
 
-    // extra profile snapshot for API / resume
+    int    score = 0;
+    int    level = 1;
+    double timeSec = 0.0;
+
     std::string              selectedShipId = "Classic";
     std::vector<std::string> unlockedShips = { "Classic" };
     double                   lastUpdatedSec = 0.0;
@@ -17,30 +19,38 @@ struct LBEntry {
 
 class Leaderboard {
 public:
-    bool Load();                 // reads Saves/leaderboard.json (creates it if missing)
-    bool Save() const;           // writes Saves/leaderboard.json
+    bool Load();
+    bool Save() const;
 
-    // Insert or update per-username best score + merge unlocks
+    // Existing signature (unchanged)
     void UpsertUser(const std::string& username,
         int score, int level, double timeSec,
         const std::string& selectedShipId,
         const std::vector<std::string>& unlockedShips,
         double lastUpdatedSec);
 
-    std::vector<LBEntry> Top(int n) const; // top n by score desc, time asc
+    // NEW: optional password (plain text). Pass "" to keep existing.
+    void UpsertUser(const std::string& username,
+        int score, int level, double timeSec,
+        const std::string& selectedShipId,
+        const std::vector<std::string>& unlockedShips,
+        double lastUpdatedSec,
+        const std::string& password);
+    // Find existing user (nullptr if not found)
+    const LBEntry* FindUser(const std::string& username) const;
+
+
+    std::vector<LBEntry> Top(int n) const;
 
 private:
     std::vector<LBEntry> entries;
 
-    // tiny JSON helpers (manual, schema-specific)
     static std::string JsonEscape(const std::string& s);
     static bool        JsonGetString(const std::string& src, const std::string& key, std::string& out);
     static bool        JsonGetInt(const std::string& src, const std::string& key, int& out);
     static bool        JsonGetDouble(const std::string& src, const std::string& key, double& out);
     static bool        JsonGetStringArray(const std::string& src, const std::string& key, std::vector<std::string>& out);
 
-    // platform helper to ensure folder exists
     static void EnsureSavesDir();
-
     static constexpr const char* kPath() { return "Saves/leaderboard.json"; }
 };

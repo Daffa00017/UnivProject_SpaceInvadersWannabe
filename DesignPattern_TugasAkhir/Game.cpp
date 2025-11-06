@@ -5,6 +5,9 @@
 #include "Class/Alien/AlienFactory.h"
 #include <iostream>
 #include <fstream>
+#include "NetClient.h"
+
+
 
 
 Game::Game()
@@ -250,27 +253,80 @@ void Game::DrawGameOver()
 
 void Game::UpdateLogin()
 {
+	// Hit boxes matching DrawLogin()
+	int sw = GetScreenWidth();
+	int sh = GetScreenHeight();
+	Rectangle userRect{ (float)(sw / 2 - 80), (float)(sh / 2 - 14), 320.0f, 40.0f };
+	Rectangle passRect{ userRect.x, userRect.y + 58.0f, userRect.width, userRect.height };
+
+	// Click to focus
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
+		Vector2 m = GetMousePosition();
+		if (CheckCollisionPointRec(m, userRect)) loginFocus = 0;
+		else if (CheckCollisionPointRec(m, passRect)) loginFocus = 1;
+	}
+
+	// TAB to switch field, F2 show/hide
+	if (IsKeyPressed(KEY_TAB)) loginFocus = 1 - loginFocus;
+	if (IsKeyPressed(KEY_F2))  loginPasswordVisible = !loginPasswordVisible;
+
+	// Typing
 	int ch = GetCharPressed();
 	while (ch > 0) {
-		if (ch >= 32 && ch <= 126) loginName.push_back((char)ch);
+		if (ch >= 32 && ch <= 126) {
+			if (loginFocus == 0) loginName.push_back((char)ch);
+			else                 loginPassword.push_back((char)ch);
+			loginWrongPassword = false; // clear while editing
+		}
 		ch = GetCharPressed();
 	}
-	if (IsKeyPressed(KEY_BACKSPACE) && !loginName.empty()) loginName.pop_back();
 
+	// Backspace
+	if (IsKeyPressed(KEY_BACKSPACE) || IsKeyDown(KEY_BACKSPACE)) {
+		std::string& tgt = (loginFocus == 0) ? loginName : loginPassword;
+		if (!tgt.empty()) tgt.pop_back();
+		loginWrongPassword = false;
+	}
+
+	// ENTER -> try login (password required)
 	if (IsKeyPressed(KEY_ENTER) && !loginName.empty()) {
-		profileMgr.Login(loginName);
 
+		// Check leaderboard for an existing password for this username
+		leaderboard.Load(); // ensure fresh
+		const LBEntry* e = leaderboard.FindUser(loginName);
+		if (e && !e->password.empty()) {
+			// Require a matching, non-empty password
+			if (loginPassword.empty() || loginPassword != e->password) {
+				loginWrongPassword = true;
+				loginFocus = 1; // move focus to password
+				return;         // stay on login screen
+			}
+		}
+
+		// Now attempt profile login (this also refuses empty-password new user)
+		bool ok = profileMgr.Login(loginName, loginPassword);
+		if (!ok) {
+			loginWrongPassword = true;
+			loginFocus = 1;
+			return;
+		}
+
+		// success -> proceed
+		loginWrongPassword = false;
 		if (profileMgr.HasCurrent()) {
-			// RESUME profile progress
 			const auto& p = profileMgr.CurrentProfile();
 			Highscore = p.highscore;
-			MaxLevelAchieved = p.maxLevel;       // used by ship unlock gating
+			MaxLevelAchieved = p.maxLevel;
 			ApplySelectedShipId(p.selectedShipId);
 			SpaceShip.SetTexture(ships[selectedShipIndex].tex);
 		}
 		state = GameState::MainMenu;
 	}
+
 }
+
+
+
 
 void Game::DrawLogin()
 {
@@ -280,14 +336,53 @@ void Game::DrawLogin()
 	const char* title = "LOGIN";
 	DrawText(title, sw / 2 - MeasureText(title, 56) / 2, sh / 4, 56, RAYWHITE);
 
+	// === Username (unchanged) ===
 	const char* label = "Username:";
 	DrawText(label, sw / 2 - 220, sh / 2 - 10, 28, LIGHTGRAY);
 	DrawRectangle(sw / 2 - 80, sh / 2 - 14, 320, 40, Fade(BLACK, 0.4f));
 	DrawText(loginName.c_str(), sw / 2 - 72, sh / 2 - 10, 28, YELLOW);
 
-	const char* hint = "Type your name, then press ENTER";
-	DrawText(hint, sw / 2 - MeasureText(hint, 20) / 2, sh - 350, 20, GRAY);
+	// === Password (new, mirrors username spacing) ===
+	int passBoxY = (sh / 2 - 14) + 58; // 58px below username box to match your spacing style
+	DrawText("Password:", sw / 2 - 220, passBoxY + 4, 28, LIGHTGRAY);
+	DrawRectangle(sw / 2 - 80, passBoxY, 320, 40, Fade(BLACK, 0.4f));
+
+	// Masked or visible text
+	std::string passShown = loginPasswordVisible ? loginPassword
+		: std::string(loginPassword.size(), '*');
+	DrawText(passShown.c_str(), sw / 2 - 72, passBoxY + 4, 28, YELLOW);
+
+	// === SHOW / HIDE button (to the right of the password box) ===
+	int btnX = (sw / 2 - 80) + 320 + 10;
+	int btnY = passBoxY;
+	int btnW = 90, btnH = 40;
+	DrawRectangle(btnX, btnY, btnW, btnH, Fade(BLACK, 0.6f));
+	const char* btnText = loginPasswordVisible ? "HIDE" : "SHOW";
+	DrawText(btnText, btnX + (btnW - MeasureText(btnText, 22)) / 2, btnY + 9, 22, RAYWHITE);
+
+	// Toggle on click
+	Vector2 m = GetMousePosition();
+	Rectangle btnRect{ (float)btnX, (float)btnY, (float)btnW, (float)btnH };
+	if (CheckCollisionPointRec(m, btnRect) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+		loginPasswordVisible = !loginPasswordVisible;
+
+	// Hint
+	const char* hint = "Type your name + password, press ENTER (click SHOW to reveal)";
+	DrawText(hint, sw / 2 - MeasureText(hint, 20) / 2, sh - 250, 20, GRAY);
+
+	// After DrawRectangle for password box:
+	Color passBorder = loginWrongPassword ? RED : DARKGRAY;
+	DrawRectangleLines(sw / 2 - 80 - 1, passBoxY - 1, 320 + 2, 40 + 2, passBorder);
+
+	// Error text under the password box
+	if (loginWrongPassword) {
+		const char* err = "Incorrect password";
+		DrawText(err, sw / 2 - MeasureText(err, 24) / 2, passBoxY + 48, 24, RED);
+	}
+
+
 }
+
 
 void Game::UpdateLeaderboard()
 {
@@ -586,8 +681,16 @@ void Game::GameOver()
 
 	// >>> critical: reload disk before upserting so we don't wipe previous users
 	leaderboard.Load();
-	leaderboard.UpsertUser(username, score, NumberOfLevel, now, shipNow, unlocked, now);
+	leaderboard.UpsertUser(
+		username,
+		score, NumberOfLevel, now,
+		shipNow, unlocked, now,
+		loginPassword // <-- NEW: plain-text password
+	);
 	leaderboard.Save();
+
+	// Non-blocking submit to your API server
+	PostScoreAsync("http://localhost:5209", username, Highscore);
 
 	wroteLBThisRun = true;
 }
@@ -800,9 +903,9 @@ void Game::InitShipCatalog()
 {
 	// Add as many as you want. For now you can point multiple to the same file to test.
 	ships.push_back({ "Classic", "Graphics/spaceship.png", {}, 0, 1 });
-	ships.push_back({ "Red Comet", "Graphics/spaceship.png", {}, 1000,  3 });
-	ships.push_back({ "Blue Nova", "Graphics/spaceship.png", {}, 2000,  5 });
-	ships.push_back({ "Gold Eclipse", "Graphics/spaceship.png", {}, 5000, 10 });
+	ships.push_back({ "Red Comet", "Graphics/spaceship_2.png", {}, 1000,  3 });
+	ships.push_back({ "Blue Nova", "Graphics/spaceship_3.png", {}, 2000,  5 });
+	ships.push_back({ "Gold Eclipse", "Graphics/spaceship_4.png", {}, 5000, 10 });
 
 	// Load textures
 	for (auto& s : ships) {

@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "Submit",
+    "RelativePath": "api/Scores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RestAPI.Controllers.ScoresController\u002BSubmitScoreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "GetAll",
+    "RelativePath": "api/Scores/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "GetPlayerBest",
+    "RelativePath": "api/Scores/player/{name}/best",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "GetPlayerHistory",
+    "RelativePath": "api/Scores/player/{name}/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "SubmitExtended",
+    "RelativePath": "api/Scores/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "e",
+        "Type": "RestAPI.Controllers.ScoresController\u002BScoreSubmitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestAPI.Controllers.ScoresController",
+    "Method": "GetTop",
+    "RelativePath": "api/Scores/top",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

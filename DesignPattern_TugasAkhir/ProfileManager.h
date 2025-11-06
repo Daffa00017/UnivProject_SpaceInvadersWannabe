@@ -1,4 +1,3 @@
-// ProfileManager.h
 #pragma once
 #include <string>
 #include <vector>
@@ -6,18 +5,24 @@
 class ProfileManager {
 public:
     struct Profile {
-        std::string username;                 
+        std::string username;
         int  highscore = 0;
         int  maxLevel = 1;
-        std::vector<std::string> unlockedShips{ "Classic" }; 
+        std::vector<std::string> unlockedShips{ "Classic" };
         std::string selectedShipId = "Classic";
         double lastUpdatedSec = 0.0;
+
+        // NEW (plain text; dev-only!)
+        std::string password;
     };
 
     // lifecycle
-    bool LoadFromDisk();            
-    bool SaveToDisk() const;        
-    bool Login(const std::string& username);
+    bool LoadFromDisk();
+    bool SaveToDisk() const;
+
+    // keep your old Login(username) if you want;
+    // here's a minimal overload that sets plain password
+    bool Login(const std::string& username, const std::string& password);
 
     bool HasCurrent() const { return loaded; }
     const Profile& CurrentProfile() const { return current; }

@@ -110,11 +110,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)$(TrashInvaders)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,6 +149,7 @@
     <ClCompile Include="DesignPattern_TugasAkhir.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Leaderboard.cpp" />
+    <ClCompile Include="NetClient.cpp" />
     <ClCompile Include="ProfileManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +168,7 @@
     <ClInclude Include="Class\UIManager\UIObserverr.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Leaderboard.h" />
+    <ClInclude Include="NetClient.h" />
     <ClInclude Include="ProfileManager.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>

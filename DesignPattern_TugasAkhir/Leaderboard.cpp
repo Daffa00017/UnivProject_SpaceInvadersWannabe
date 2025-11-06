@@ -193,8 +193,13 @@ bool Leaderboard::Load() {
 
         std::string block = s.substr(objStart, objEnd - objStart + 1);
 
+        // inside the object parsing block in Load():
         LBEntry row;
         JsonGetString(block, "username", row.name);
+
+        // NEW: optional plain-text password
+        JsonGetString(block, "password", row.password);
+
         JsonGetInt(block, "score", row.score);
         JsonGetInt(block, "level", row.level);
         JsonGetDouble(block, "timeSec", row.timeSec);
@@ -202,6 +207,7 @@ bool Leaderboard::Load() {
         JsonGetStringArray(block, "unlockedShips", row.unlockedShips);
         JsonGetDouble(block, "lastUpdatedSec", row.lastUpdatedSec);
         if (!row.name.empty()) entries.push_back(row);
+
 
         i = objEnd + 1; // continue after this object
     }
@@ -222,6 +228,8 @@ bool Leaderboard::Save() const {
         if (i) f << ",\n";
         f << "    {\n";
         f << "      \"username\": " << q(e.name) << ",\n";
+        // NEW: plain-text password (empty string if not set)
+        f << "      \"password\": " << q(e.password) << ",\n";
         f << "      \"score\": " << e.score << ",\n";
         f << "      \"level\": " << e.level << ",\n";
         f << "      \"timeSec\": " << e.timeSec << ",\n";
@@ -239,6 +247,7 @@ bool Leaderboard::Save() const {
     return true;
 }
 
+
 // merge helper for unlocked ships
 static void MergeUnique(std::vector<std::string>& dst, const std::vector<std::string>& src) {
     for (const auto& s : src) {
@@ -246,45 +255,66 @@ static void MergeUnique(std::vector<std::string>& dst, const std::vector<std::st
     }
 }
 
+// Keep original signature: forward to the new overload with ""
 void Leaderboard::UpsertUser(const std::string& username,
     int score, int level, double timeSec,
     const std::string& selectedShipId,
     const std::vector<std::string>& unlockedShips,
     double lastUpdatedSec)
 {
+    UpsertUser(username, score, level, timeSec, selectedShipId, unlockedShips, lastUpdatedSec, "");
+}
+
+// NEW overload: updates/sets password if non-empty
+void Leaderboard::UpsertUser(const std::string& username,
+    int score, int level, double timeSec,
+    const std::string& selectedShipId,
+    const std::vector<std::string>& unlockedShips,
+    double lastUpdatedSec,
+    const std::string& password)
+{
     auto it = std::find_if(entries.begin(), entries.end(),
         [&](const LBEntry& e) { return e.name == username; });
 
     if (it == entries.end()) {
         LBEntry e;
-        e.name = username; e.score = score; e.level = level; e.timeSec = timeSec;
+        e.name = username;
+        e.password = password; // may be ""
+        e.score = score; e.level = level; e.timeSec = timeSec;
         e.selectedShipId = selectedShipId; e.unlockedShips = unlockedShips; e.lastUpdatedSec = lastUpdatedSec;
         entries.push_back(std::move(e));
     }
     else {
-        // keep best score (or earlier time on tie)
+        // update bests
         if (score > it->score || (score == it->score && timeSec < it->timeSec)) {
             it->score = score;
             it->level = level;
             it->timeSec = timeSec;
         }
         else {
-            // still keep best of level separately
             it->level = std::max(it->level, level);
         }
-        // always update snapshot fields
         it->selectedShipId = selectedShipId;
         MergeUnique(it->unlockedShips, unlockedShips);
         it->lastUpdatedSec = lastUpdatedSec;
+
+        // only overwrite password if caller provided a non-empty value
+        if (!password.empty()) it->password = password;
     }
 
-    // keep sorted for fast Top()
     std::sort(entries.begin(), entries.end(), [](const LBEntry& a, const LBEntry& b) {
         if (a.score != b.score) return a.score > b.score;
         return a.timeSec < b.timeSec;
         });
     if (entries.size() > 100) entries.resize(100);
 }
+
+const LBEntry* Leaderboard::FindUser(const std::string& username) const {
+    auto it = std::find_if(entries.begin(), entries.end(),
+        [&](const LBEntry& e) { return e.name == username; });
+    return (it == entries.end()) ? nullptr : &*it;
+}
+
 
 std::vector<LBEntry> Leaderboard::Top(int n) const {
     if (n < 0) n = 0;

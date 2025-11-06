@@ -112,6 +112,10 @@ class Game {
 		// Login UI state
 		std::string loginName;
 		int loginCursor = 0;
+		std::string loginPassword;
+		bool        loginPasswordVisible = false;
+		int         loginFocus = 0; // 0 = username, 1 = password
+		bool        loginWrongPassword = false;
 
 		bool wroteLBThisRun = false;
 
