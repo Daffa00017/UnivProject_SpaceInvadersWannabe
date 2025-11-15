@@ -690,7 +690,7 @@ void Game::GameOver()
 	leaderboard.Save();
 
 	// Non-blocking submit to your API server
-	PostScoreAsync("http://localhost:5209", username, Highscore);
+	PostScoreAsync("http://10.81.168.178:5209", username, Highscore);
 
 	wroteLBThisRun = true;
 }
@@ -716,6 +716,7 @@ void Game::InitGame()
 {
 	//init variable (please be on the top before spawning stuff, since its a reset)
 	alienSpeedMultiplier = 0;
+	aliensDownPixel = 4;
 	alienLocationDiff = 0;
 	lives = 3;
 	score = 0;

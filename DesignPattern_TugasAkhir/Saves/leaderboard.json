@@ -8,7 +8,27 @@
       "timeSec": 183.713,
       "selectedShipId": "Classic",
       "unlockedShips": ["Classic"],
-      "lastUpdatedSec": 15.7446
+      "lastUpdatedSec": 18.7895
+    },
+    {
+      "username": "Daffa",
+      "password": "12321",
+      "score": 33700,
+      "level": 4,
+      "timeSec": 141.832,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 141.832
+    },
+    {
+      "username": "Adit",
+      "password": "12321",
+      "score": 12100,
+      "level": 2,
+      "timeSec": 79.2513,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 79.2513
     },
     {
       "username": "Dafa",
@@ -19,6 +39,16 @@
       "selectedShipId": "Classic",
       "unlockedShips": ["Classic"],
       "lastUpdatedSec": 55.5737
+    },
+    {
+      "username": "FahrialAnanta",
+      "password": "12345",
+      "score": 6900,
+      "level": 1,
+      "timeSec": 78.1547,
+      "selectedShipId": "Blue Nova",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 78.1547
     },
     {
       "username": "wow",
@@ -39,6 +69,26 @@
       "selectedShipId": "Classic",
       "unlockedShips": ["Classic"],
       "lastUpdatedSec": 24.4889
+    },
+    {
+      "username": "Daffa1234",
+      "password": "12321",
+      "score": 3200,
+      "level": 1,
+      "timeSec": 23.3042,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 23.3042
+    },
+    {
+      "username": "Fery",
+      "password": "qwe",
+      "score": 2100,
+      "level": 1,
+      "timeSec": 36.271,
+      "selectedShipId": "Classic",
+      "unlockedShips": ["Classic"],
+      "lastUpdatedSec": 36.271
     },
     {
       "username": "FERI",
